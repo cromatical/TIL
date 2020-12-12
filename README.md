@@ -1,4 +1,2 @@
 # TIL
 ----
-## Categories
-
