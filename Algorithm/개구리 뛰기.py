@@ -15,6 +15,6 @@ def solution(lst, i, cnt):
 			solution(lst, i, cnt + 1)
 
 
-nums = list(map(int, input().split()))
+lst = list(map(int, input().split()))
 
-print(solution(nums, 0, 0))
+print(solution(lst, 0, 0))
