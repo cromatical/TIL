@@ -25,6 +25,7 @@ def solution(mat, visited, n, m): # bfs함수
 	
 	while queue: # 미로 탈출 시작
 		v = queue.popleft() # 처음 들어간 위치 확인
+		
 		for action in action_list: # 유저가 움직일 수 있는 위치 파악
 			r = v[0] + action[0]
 			c = v[1] + action[1]
