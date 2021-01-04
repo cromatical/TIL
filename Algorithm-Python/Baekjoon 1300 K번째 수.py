@@ -10,7 +10,7 @@ input=sys.stdin.readline
 
 N = int(input())
 K = int(input())
-start, end = 1, K # 0~N*N번째 수를 나열
+start, end = 1, N**2 # 0~N*N번째 수를 나열
 
 while start <= end:
     mid = (start + end) // 2 # 기준값 설정
