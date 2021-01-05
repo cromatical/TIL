@@ -27,7 +27,7 @@ def dijkstra(start):
 				distance = cost
 				heapq.heappush(q, (cost, i[0])) # 우선순위 큐에 추가
 
-dijkstra(start) # 다익스트라 알고리즘 수행
+dijkstra(start) # 다익스트라 알고리즘 수행.
 
 for i in range(1, n + 1): # 모든 노느로 가기 위한 최단 거리 출력
 	if distance[i] == INF:
