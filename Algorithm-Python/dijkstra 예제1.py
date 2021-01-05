@@ -31,7 +31,7 @@ def dijkstra(start):
 	for j in graph[start]:
 		distance[j[0]] = j[1] # start노드에서 이웃노드들에 대한 거리
 	
-	for i in range(n - 1): # 시작노드를 제외한 n - 1개의 노드에 대해 반복
+	for _ in range(n - 1): # 시작노드를 제외한 n - 1개의 노드에 대해 반복
 		now = get_smallest_node() # 현재 최단거리가 가장 짧은 노드꺼내서 방문처리.
 		visited[now] = True
 		for j in graph[now]: # 현재 노드와 연결된 다른 노드 확인
