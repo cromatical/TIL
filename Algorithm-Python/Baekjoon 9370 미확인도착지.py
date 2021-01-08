@@ -43,13 +43,7 @@ for _ in range(T):
 		result = min(result1, result2)
 		if (result < INF and result == dijkstra(s, goal)): # 목적지까지 우회하지 않고 최단거리로 이동할꺼기 때문에 비교
 			success.append(goal) 
-
-	for goal in goal_lst:
-		result1 = dijkstra(s, g) + dijkstra(g, h) + dijkstra(h, goal)
-		if goal not in success:
-			if (result < INF):
 				
-
 	success.sort() # 오름차순으로 정렬
 	for val in success:
 		print(val, end=' ')
