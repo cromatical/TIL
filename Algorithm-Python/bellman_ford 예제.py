@@ -27,9 +27,9 @@ def bellman_ford(start):
 result = bellman_ford(start)
 if result == 1: # 음수 사이클이 아닌경우
 	for i in range(1, n + 1):
-		if distance[i] == INF:
-			print("INF")
-		else:
+		if distance[i] < INF:
 			print(distance[i], end=" ")
+		else:
+			print("INF")
 else: # 음수 사이클인 경우
 	print("negative cycle")

@@ -21,10 +21,10 @@ for k in range(1, n + 1): # 점화식에 따라 플로이드 워셜 알고리즘
 
 for a in range(1, n + 1): # 수행결과 출력
 	for b in range(1, n + 1):
-		if graph[a][b] == INF:
-			print("INF")
-		else:
+		if graph[a][b] < INF:
 			print(graph[a][b], end=" ")
+		else:
+			print("INF")
 	print()
 
 	

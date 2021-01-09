@@ -24,13 +24,13 @@ def dijkstra(start):
 		for i in graph[now]: # 현재 노드와 연결된 다른 인접한 노드들을 확인
 			cost = dist + i[1]
 			if cost < distance[i[0]]:
-				distance = cost
+				distance[i[0]] = cost
 				heapq.heappush(q, (cost, i[0])) # 우선순위 큐에 추가
 
 dijkstra(start) # 다익스트라 알고리즘 수행.
 
-for i in range(1, n + 1): # 모든 노느로 가기 위한 최단 거리 출력
-	if distance[i] == INF:
-		print("INF")
-	else:
+for i in range(1, n + 1):
+	if distance[i] < INF: # 도달할 수 있는 경우
 		print(distance[i])
+	else: # 만약 도달할 수 없는 경우 무한으로 출력
+		print("INF")

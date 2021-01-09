@@ -43,7 +43,8 @@ def dijkstra(start):
 dijkstra(start) # 다익스트라 알고리즘 실행
 
 for i in range(1, n + 1):
-	if distance[i] == INF: # 만약 도달할 수 없는 경우 무한으로 출력
-		print("INF")
-	else: # 도달할 수 있는 경우 
+	if distance[i] < INF: # 도달할 수 있는 경우
 		print(distance[i])
+	else: # 만약 도달할 수 없는 경우 무한으로 출력
+		print("INF")
+
