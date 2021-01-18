@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(50000) # 재귀 제한 풀어주기
+input = sys.stdin.readline 
+
 n, m = map(int, input().split()) # 학생수, 팀을 합칠지, 같은팀인지 수행하는 연산수
 parent = [0] * (n + 1) # 부모노드 확인을 위한 테이블 생성
 
