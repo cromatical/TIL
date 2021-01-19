@@ -4,7 +4,7 @@ input = sys.stdin.readline
 INF = int(1e9)
 
 v, e = map(int, input().split()) # 노드와 간선의 개수
-graph = [[INF] * (v + 1)for _ in range(v + 1)]
+graph = [[INF] * (v + 1) for _ in range(v + 1)]
 visited = [False] * (v + 1) # 방문 여부 리스트
 distance = [INF] * (v + 1) # 거리 테이블
 
