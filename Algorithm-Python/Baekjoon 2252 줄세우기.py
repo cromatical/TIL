@@ -11,7 +11,7 @@ for _ in range(m):
 	graph[a].append(b)
 	indegree[b] += 1
 
-print(graph)
+# print(graph)
 
 def topology_sort():
 	result = [] # 결과 저장 테이블
@@ -24,7 +24,7 @@ def topology_sort():
 	while q:
 		now = q.popleft()
 		result.append(now)
-		print(now)
+		# print(now)
 		for i in graph[now]: # 현재 노드와 연결된 노드 찾기
 			indegree[i] -= 1
 			if indegree[i] == 0:
