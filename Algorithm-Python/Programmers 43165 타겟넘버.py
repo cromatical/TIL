@@ -4,7 +4,7 @@ def solution2(numbers, target, total, i):
 		if total == target:
 			return 1
 		return 0
-	b = numbers[i] # 인덱스
+	b = numbers[i] # idx
 	return solution2(numbers, target, total + b, i + 1) + solution2(numbers, target, total - b, i + 1)
 
 def solution(numbers, target):

@@ -18,3 +18,5 @@ def solution(n,a,b):
 		n.append(lst)
 		cnt += 1
 	return cnt
+
+print(solution(8, 3, 7))
