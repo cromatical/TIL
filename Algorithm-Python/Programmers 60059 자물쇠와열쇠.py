@@ -35,21 +35,20 @@ def solution(key, lock):
 				result_lock = copy.deepcopy(padding_lock) # padding_lock은 계속 사용하기 때문에
 				for i in range(len(key)): # key에 해당되는 부분
 					for j in range(len(key)):
-						if result_lock[i + r][j + c] == 0:
-							result_lock[i + r][j + c] = lst[i][j]
+						result_lock[i + r][j + c] += lst[i][j]
 				# for result in result_lock:
 				# 	print(result)
+
+				cnt = 0
+				for i in range(len(lock)):
+					for j in range(len(lock)):
+						if result_lock[i + total_length // 2 - 1][j + total_length // 2 - 1] == 1:
+							cnt += 1
+				# print(cnt)	
+				if cnt == len(lock) * len(lock):
+					return True
 				# print("")
 
-				total = 0
-				for result in result_lock[padding_length // 2  + 1:len(key) + padding_length // 2 + 1]:
-					total += sum(result[padding_length // 2 + 1:len(key) + padding_length // 2 + 1])
-				if total == len(lock) * len(lock):
-					for i in result_lock:
-						print(i)
-					return True
-				# print("종료")
-				# print("")
 	return False
 
 
