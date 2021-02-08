@@ -3,7 +3,7 @@ sys.setrecursionlimit(500000)
 input = sys.stdin.readline
 
 n = int(input()) # 숫자개수 입력
-num_lst = list(map(int, input().split())) # 숫자 수열 테이블
+num_lst = list(map(int, input().split())) # 숫자 수열 테이블.
 arithmetic_lst = ['+', '-', '*', '/']
 arithmetic_cnt = list(map(int, input().split()))
 

@@ -3,17 +3,17 @@ from itertools import permutations
 input = sys.stdin.readline
 
 n = int(input()) # 숫자개수
-num_lst = list(map(int, input().split())) # 숫자 수열
+num_lst = list(map(int, input().split())) # 숫자 수열.
 arithmetic_lst = ['+', '-', '*', '/']
 arithmetic_cnt = list(map(int, input().split())) # 연산 리스트, 개수 왼쪽부터 +, - ,*, /
 
-new_arithmetic_lst = []
+new_arithmetic_lst = [] # 2 1 1 1  [+ + - * /]
 for i in range(len(arithmetic_lst)):
 	new_arithmetic_lst += arithmetic_lst[i] * arithmetic_cnt[i]
-print(new_arithmetic_lst)
+# print(new_arithmetic_lst)
 
 total_lst = list(permutations(new_arithmetic_lst, sum(arithmetic_cnt)))
-print(total_lst)
+# print(total_lst)
 
 result_lst = []
 for i in total_lst:
