@@ -1,3 +1,6 @@
 *.vscode
 *.ipynb_checkpoints
 DS_Store
+
+# dataset
+/Deep learning from scratch/dataset/
