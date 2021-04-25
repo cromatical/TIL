@@ -15,10 +15,10 @@
 * ~~[신입 데이터 엔지니어로 취업했다](https://dailyheumsi.tistory.com/207#1.-%EA%B3%BC%EC%A0%95)~~
 
 ### 논문
-* [2016. FaceNet](https://arxiv.org/pdf/1503.03832.pdf)
 * [2020. A Text Document Clustering Method Based on Weighted BERT Model](https://www.semanticscholar.org/paper/A-Text-Document-Clustering-Method-Based-on-Weighted-Li-Cai/1b42b0fa6e3e968b894a0d3366f55241e97d4e5e)
-* [2018. 실시간 이슈 분석을 위한 뉴스 군집화 및 다중 문서 요약](https://www.koreascience.or.kr/article/CFKO201832073078600.pdf)
 * [2019. 유사 주제를 갖는 대량의 뉴스 기사에 대한 군집 기반 중복 제거 방법](https://www.eiric.or.kr/literature/ser_view.php?SnxGubun=INLE&mode=total&searchCate=literature&more=Y&research=Y&re_q1=&gu=INLE005A1&cmd=qryview&SnxIndxNum=227988&rownum=5&totalCnt=582&q1_t=ZXQ=&listUrl=L3NlYXJjaC9yZXN1bHQucGhwP1NueEd1YnVuPUlOTEUmbW9kZT10b3RhbCZzZWFyY2hDYXRlPWxpdGVyYXR1cmUmcTE9ZXQmbW9yZT1ZJmYxPSZyZXNlYXJjaD1ZJnJlX3ExPQ==&q1=et)
+* [2018. 실시간 이슈 분석을 위한 뉴스 군집화 및 다중 문서 요약](https://www.koreascience.or.kr/article/CFKO201832073078600.pdf)
+* [2016. FaceNet](https://arxiv.org/pdf/1503.03832.pdf)
 
 ### 팁?! 및 이슈
 * [CNN이 동작하지 않는 이유](https://seongkyun.github.io/study/2019/11/21/cnn_problem/)
