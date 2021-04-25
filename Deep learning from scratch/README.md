@@ -53,4 +53,4 @@
 * [2016.06.18 tensor_flow로얼굴인식구현_r10_mariocho](https://www.slideshare.net/hephaex/tfk-6618-tensorflowr10mariocho)
 
 ### 오디오처리
-* [오디오데이터전처리 Waveform](https://hyunlee103.tistory.com/54)
+* [2020.04.02 오디오데이터전처리 Waveform](https://hyunlee103.tistory.com/54)
